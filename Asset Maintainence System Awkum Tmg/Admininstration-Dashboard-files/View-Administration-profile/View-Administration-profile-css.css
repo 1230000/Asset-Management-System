@@ -1,0 +1,450 @@
+@import url(https://fonts.googleapis.com/css2);
+
+
+
+
+   
+
+body{
+
+
+     min-height: 150vh;
+    
+    background-color: ghostwhite;
+    font-family: system-ui;
+    margin: 0;
+
+}
+
+
+.clearfix{
+  clear: both;
+}
+
+
+.akmtxt-head {
+  width: 251px;
+  height: 57px;
+  background-color:#2E9C4C ;
+  
+
+}
+
+.akmtxt-head .Aname{
+  float: left;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif; 
+  color: gainsboro;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.akmtxt-head .Aname:hover{
+
+  margin-left: 10px;
+
+  color: gainsboro;
+  background-color:#2E9C4C;
+}
+
+
+
+
+.logo{
+
+  width: 100px;
+  height: 75px;
+  margin-left: 70px;
+
+
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+
+}
+
+
+/*#2E9C4C*/
+
+
+.scroll {
+    overflow-y: scroll;
+    height:  600px  ;
+    width: 250px;
+    background-color: #282C35;
+
+}
+.scroll::-webkit-scrollbar {
+    width:5px;
+
+}
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.6); 
+    border-radius:5px;
+    
+}
+.scroll::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px red; 
+    height: 5px;
+}
+.scroll::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 6px green; 
+}
+
+
+.sidenav {
+  float: left;
+  min-height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+
+  overflow: hidden;
+  transition: .5s ;
+  margin:0;
+  background-color: #282C35;
+
+    overflow: hidden;
+  box-shadow:  1px -5px 15px #212B36;
+
+ 
+}
+
+.sidenav a {
+  margin-top: 5;
+  margin-left: 15px;
+  margin-right: 10px ;
+  margin-bottom: 8px;
+
+
+
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  display: block;
+
+  transition: .5s ;
+}
+
+
+.sidenav a:hover {
+
+  border-radius: 5px;
+  background-color: dimgray;
+
+}
+
+
+.icon-a .icons{
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 2px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: ghostwhite;
+}
+.icon-a .icons:hover{
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 2px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: greenyellow;
+}
+
+
+
+
+
+  
+
+
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+
+
+#main-head {
+  background-color: #2E9C4C;
+  transition: margin-left .5s ;
+  padding: 16px;
+  margin-left: 250px;
+  min-width: 400px;
+  height: 25px;
+  overflow: hidden;
+
+
+}
+
+h1{
+  float: left;
+  margin-top: 0;
+  margin-left:300px;
+  font-size: 20px;
+  font-family: Times-New-Romans;
+  color: white;
+}
+
+
+.App-body{
+  height: 100%;
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 250px;
+  overflow: hidden;
+  background-color: ghostwhite;
+  
+ 
+}
+
+.nav-push{
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-push:hover{
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav2-push {
+  float: left;
+
+  margin-left: 0;
+  margin-top: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.nav2-push{
+  display: none;
+}
+
+
+
+.profile{
+  float: right;
+  width: auto;
+  height: 27px;
+  margin-top: 0;
+  margin-right: ;
+
+  padding: 0;
+
+}
+.profile p {
+  float: right;
+  font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+} 
+.profile p span{
+  float: right;
+  font-size: 12px;
+    color: powderblue;
+
+    margin-top: 3px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+} 
+
+
+
+h2{
+
+  padding-left:8px;
+  margin-top: 0;
+  color: dark;
+  font-family: serif;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 40px;
+  text-shadow: -5px -5px 10px black;
+}
+
+
+
+
+
+.prnt-col-div-1{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 28%;
+  height: 500px;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 5px 5px 10px black;
+  border-left: .1px solid black;
+
+}
+.child-col-div-1{
+    float: left;
+    width: 100%;
+    height: 100%;
+
+
+}
+.profile-box-1{
+  float: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 7px;
+}
+.profile-box-1 p{
+    float: left;
+    margin-top: 40px;
+    margin-left: 80px;
+  color: blue;
+}
+.profile-box-1 a{
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    text-decoration: none;
+  color: red;
+}
+
+.profile-box-1 h5{
+  float: left;
+  margin-left: 38px;
+}
+.hr1{
+  margin-top: 0;
+
+  border: 2px solid blue;
+}
+.hr2{
+  width: 70%;
+
+}
+
+
+
+
+.prnt-col-div-2{
+  float: right;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 68%;
+  height: 500px;
+  border-radius: 7px;
+  background-color: white;
+  box-shadow: 5px 5px 10px black;
+  border-left: .1px solid black;
+  cursor: not-allowed;
+}
+.child-col-div-2{
+    float: left;
+    width: 100%;
+    height: 100%;
+
+
+}
+.profile-box-2{
+  float: left;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-box-2 strong {
+  float: left;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+
+
+}
+
+.profile-box-2 .text-muted{
+
+  height: 20px;
+  width: 90%;
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-bottom: 0;
+  color: black;
+  opacity: 75%;
+  font-weight: bolder;
+
+}
+.profile-box-2 .profile-box-hr{
+  width: 90%;
+  margin-top: 5px;
+  margin-bottom: 0;
+  border: .1px solid lightgray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+  position: relative;
+   background-color: ghostwhite;
+
+  transition: margin-left .5s;
+
+  margin-left: 250px;
+  margin-top: 29%;
+
+
+  min-width : 400px;
+  height: 30px;
+  overflow: hidden;
+  box-shadow: -1px -1px 10px black;
+padding: 10px;
+
+}
+footer a {
+
+
+  font-size: 12px;
+
+  text-decoration: none;
+    margin-left: 15px;
+
+}
+
+footer a span{
+
+
+  font-size: 12px;
+  color: darkred;
+  font-size: 12px;
+
+}

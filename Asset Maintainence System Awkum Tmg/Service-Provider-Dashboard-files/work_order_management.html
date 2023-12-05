@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Work Orders</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="Service-Provider-Dashboard-css/Service-Provider-Dashboard-css.css" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	
+			
+		<script src="https://kit.fontawesome.com/796a434402.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+
+
+<style type="text/css">
+	::-webkit-scrollbar {
+    width:5px;
+
+
+::-webkit-scrollbar-track 
+    -webkit-box-shadow:inset -5px -5px 6px darkgreen; 
+
+
+::-webkit-scrollbar-thumb 
+    border-radius:5px;
+    -webkit-box-shadow: inset -5px -5px 6px darkgreen; 
+    height: 5px;
+    color: green;
+
+
+::-webkit-scrollbar-thumb:hover 
+    -webkit-box-shadow: inset -5px -5px 6px green; 
+}
+
+
+
+
+
+
+
+
+<style>
+        /* Style for the table container */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Style for table header row */
+        table th {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Style for table data rows */
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Alternate row background color for better readability */
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Adjust styles as needed to match your design preferences */
+
+        /* Style for buttons */
+        .action-buttons button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .action-buttons button:last-child {
+            margin-right: 0;
+        }
+
+        .action-buttons button:hover {
+            background-color: #1e7e34;
+        }
+    </style>
+
+	</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+
+			<div class="akmtxt-head">
+
+				<a href="#" class="Aname">AWKUM-TMG </a>
+			</div>
+<div class="scroll">
+			
+			<img src="images/unilogo.png" class="logo" alt="awkum-tmg logo">
+
+		
+
+
+	  <a href="file:///F:/Asset%20Maintainence%20System%20Awkum%20Tmg/Service-Provider-Dashboard.html" class="icon-a" style="	 background: dimgray;	 border-radius: 5px; "	><i class="fa fa-tachometer icons"></i>-Dashboard</a>
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-briefcase icons"></i>&nbsp;Work Orders </a>
+	  <a href="#"class="icon-a"><i class="fa fa-credit-card-alt icons"></i>&nbsp;Billing and Payments</a> 
+
+	  
+
+	  
+
+	  
+
+	  <a href="#"	class="icon-a" target="popup"  onclick="window.open('', 'popup', 'width=600, height=700, scrollbars=no,resizable=no'); return false";  
+	  ><i class="fa fa-wrench icons"></i>&nbsp;Edit Settings </a>
+
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-sign-out icons"></i>&nbsp;Logout </a>
+
+
+	  
+	  <br/>
+	  <hr style="color: dimgray; border: .1px solid dimgray; margin-top: 240px;" >
+
+	  <p style="text-align: center; color: dimgray; font-size: 13px;"> Version 0.1  <br/><br/>  developed by M.Sohail </p>
+
+	  <br/>
+	
+</div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+
+	<div id="main-head">
+
+			
+
+			<span  class="nav-push">☰</span>
+			<span  class="nav2-push">☰</span>
+			<h1> University Assets Maintainence System  </h1>
+				
+	
+			<div class="profile">
+				 	  
+			<p> Vendor &nbsp;  <span> Logged in as Vendor </span></p>
+			</div>
+
+	</div>
+	
+			<div class="clearfix"></div>
+		
+
+
+	<div class="App-body">
+
+		<h2> Dashboard </h2>
+
+		<!--
+		<div style="background-image:url('images/awkumbaner.jpg' ); background-size: 100% 100%; background-repeat: no-repeat;  "  class="profile-box" style img src="images/Prback.png" class="proback" >
+		-->
+			
+			
+
+		<h1>Work Orders</h1>
+    
+    <!-- Table to display work orders -->
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Description</th>
+                <th>Location</th>
+                <th>Urgency</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with work order data -->
+            <tr>
+                <td>WO-001</td>
+                <td>Repair broken equipment</td>
+                <td>Main Building</td>
+                <td>High</td>
+                <td>Open</td>
+                <td class="action-buttons">
+                    <button onclick="viewDetails('WO-001')">View</button>
+                    <button onclick="completeOrder('WO-001')">Complete</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+
+		<div class="clearfix"></div>
+				
+
+
+
+		
+
+
+
+
+
+
+
+		
+<!-- The App Body ends here -->
+</div>
+
+
+		
+		
+
+		
+
+<div class="clearfix"></div>
+		
+
+		
+			
+			
+
+	
+
+
+				<div class="footer">
+							<div class="footer-text">
+									<a href="#"> <big>©</big> All Rights Reserved | Abdul Wali Khan University Mardan (Timergara Campus) | <span> developed by M.Sohail</span> </a>
+							</div>
+			
+							</div>
+							
+		
+
+
+
+
+
+							
+
+	
+<div class="clearfix"></div>
+   
+	
+
+<script type="text/javascript">
+
+	  $(".nav-push").click(function(){
+
+	    $("#mySidenav").css('width','70px');
+	    $("#main-head").css('margin-left','70px');
+	    $(".App-body").css('margin-left','70px');
+
+	    $(".footer").css('margin-left','70px');
+	    
+	   $(".logo").css('width','50px');
+	   $(".logo").css('height','30px');
+
+			$(".logo").css('margin-left','10px');
+
+			$(".Aname").css('margin-left','10px');
+
+	    $(".icon-a").css('visibility','hidden');
+	    $(".icons").css('visibility','visible');
+	 	
+
+	 	$(".nav-push").css('display','none');
+	    $(".nav2-push").css('display','block');
+
+	   	$(".Aname").css('display', 'block');
+	   	$(".Aname").css('visibility','hidden');
+
+
+	  });												
+
+	$(".nav2-push").click(function(){
+	    $("#mySidenav").css('width','250px');
+	    $("#main-head").css('margin-left','250px');
+	    $(".App-body").css('margin-left','250px');
+	    $(".logo").css('margin-left','70px');
+	    $(".footer").css('margin-left','250px');
+
+	    $(".Aname").css('visibility','visible');
+	    $(".logo").css('width',' 110px');
+	    $(".logo").css('height',' 90px');
+
+	     $(".icon-a").css('visibility','visible');
+	     $(".icons").css('visibility','visible');
+			
+	     $(".nav-push").css('display','block');
+	     $(".nav2-push").css('display','none');
+
+		$(".logo").css('visibility','visible');
+
+	    
+	 });
+
+
+
+
+</script>
+
+<!-- JavaScript functions for button actions -->
+    <script>
+        function viewDetails(orderID) {
+            // Implement logic to view work order details here
+        }
+
+        function completeOrder(orderID) {
+            // Implement logic to mark the work order as complete here
+        }
+    </script>
+</body>
+
+	
+
+
+
+
+
+</html>

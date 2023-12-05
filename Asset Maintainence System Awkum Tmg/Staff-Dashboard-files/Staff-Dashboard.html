@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Staff | Dashbaord</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="Staff-Dashboard-css/Staff-Dashboard-css.css" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	
+			
+		<script src="https://kit.fontawesome.com/796a434402.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+
+
+<style type="text/css">
+	::-webkit-scrollbar {
+    width:5px;
+
+
+::-webkit-scrollbar-track 
+    -webkit-box-shadow:inset -5px -5px 6px darkgreen; 
+
+
+::-webkit-scrollbar-thumb 
+    border-radius:5px;
+    -webkit-box-shadow: inset -5px -5px 6px darkgreen; 
+    height: 5px;
+    color: green;
+
+
+::-webkit-scrollbar-thumb:hover 
+    -webkit-box-shadow: inset -5px -5px 6px green; 
+}
+
+</style>
+
+
+
+
+
+	</head>
+
+
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+
+			<div class="akmtxt-head">
+
+				<a href="#" class="Aname">AWKUM-TMG </a>
+			</div>
+<div class="scroll">
+			
+			<img src="images/unilogo.png" class="logo" alt="awkum-tmg logo">
+
+		
+
+
+	  <a href="#" class="icon-a" style="	 background: dimgray;	 border-radius: 5px; "	><i class="fa fa-tachometer icons"></i>-Dashboard</a>
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-wrench icons"></i>&nbsp;Submit a Complaint</a>
+	  <a href="#"class="icon-a"><i class="fa fa-briefcase icons"></i>&nbsp;Panding Work Orders</a>
+
+	  <a href="#"class="icon-a"><i class="fa fa-handshake-o icons"></i>&nbsp;Add Service Provider </a>
+	  <a href="#"class="icon-a"><i class="fa fa-briefcase icons"></i>&nbsp;Assign Work Orders</a>
+
+
+	  
+	   <a href="#"class="icon-a"><i class="fa fa-check-circle icons"></i>&nbsp;View Submitted Complaints</a>
+	  <a href="#"class="icon-a"><i class="fa fa-bell icons"></i>&nbsp;Post Updates </a>
+	  <a href="#"class="icon-a"><i class="fa fa-list-alt icons"></i>&nbsp;Reports </a>
+
+	  <a href="#"	class="icon-a" target="popup"  onclick="window.open('', 'popup', 'width=600, height=700, scrollbars=no,resizable=no'); return false";  
+	  ><i class="fa fa-wrench icons"></i>&nbsp;Edit Settings </a>
+
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-sign-out icons"></i>&nbsp;Logout </a>
+
+
+	  
+	  <br/>
+	  <hr style="color: dimgray; border: .1px solid dimgray; margin-top: 120px;">
+
+	  <p style="text-align: center; color: dimgray; font-size: 13px;"> Version 0.1  <br/>  developed by M.Sohail </p>
+
+	  <br/>
+	
+</div>
+</div>
+
+
+
+
+
+
+	<div id="main-head">
+
+			
+
+			<span  class="nav-push">☰</span>
+			<span  class="nav2-push">☰</span>
+			<h1> University Assets Maintainence System  </h1>
+				
+	
+			<div class="profile">
+				 	  
+			<p> Awrang Zain khan &nbsp;  <span> Logged in as Saff </span></p>
+			</div>
+
+	</div>
+	
+			<div class="clearfix"></div>
+		
+
+
+	<div class="App-body">
+
+		<h2> Dashboard </h2>
+
+		<!--
+		<div style="background-image:url('images/awkumbaner.jpg' ); background-size: 100% 100%; background-repeat: no-repeat;  "  class="profile-box" style img src="images/Prback.png" class="proback" >
+		-->
+			
+			<div class="viewP-box" style="background-image: url('images/awkumbaner.png'); background-size: 100% 100%; background-repeat: no-repeat;" >
+			<h3> Good Morning <br/> Awrang Zaib Khan  
+			<br/> Departement of Computer Science (Timergara Campus) </h3>
+			<div class="viewbtn">
+				<a href="" > <button class="btn-view2"> View Profile </button></a>
+				</div>
+			</div>
+			
+		
+		<div class="prnt-col-div-4">
+
+				<div class="child-col-div-4"  >
+				<div class="box-1" >
+					<i class="fa fa-wrench icons"></i>
+					<p>37 <br/> <a href="#">Submit a Complaint</a></p> 
+				</div>
+				</div>
+
+				<div class="child-col-div-4" >
+				<div class="box-2" >
+					
+					<i class="fa fa-briefcase icons"></i>
+					<p>12 <br/> <a href="#">Panding Work Orders</a></p>
+				</div>
+				</div>
+
+				
+				<div class="child-col-div-4">
+				<div class="box-3"> 
+					
+					<i class="fa fa-check-circle icons"></i>
+					<p>13 <br/> <a href="#"> View Submitted Complaints</a></p>
+				</div>
+			</div>
+
+				<!-- <div class="child-col-div-4">
+				<div class="box-4">
+					<i class="fa fa-check-circle icons"></i>
+					<p>120 <br/> <a href="#"></a></p>
+				</div>
+				</div>-->
+		</div>
+
+
+			<div  class="prnt-col-div-6">
+				<div class="child-col-div-6">
+
+					<div class="box-notify">
+
+						<p><i class="fa fa-bell icons"></i> Administration Notifications
+						<a href="#"> View Old </a></p>
+						<br>
+						<br>
+						 
+						 <marquee direction="up" scrollamount="10" scrolldelay="0">
+						 <strong>Notification About Hostil Property</strong>
+						 <br/>
+						 <small>2023-08-18 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+						 <strong>Notification About Auditurium Auditorium Hall</strong>
+						 <br/>
+						 <small>2023-06-05 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+
+						 <strong>Notification For Assesment of New Orders</strong>
+						 <br/>
+						 <small>2023-07-08 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+						 <strong>Notification About Univeristy Closing</strong>
+						 <br/>
+						 <small>2023-07-20 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+						  <strong>Notification About Hostil Property</strong>
+						 <br/>
+						 <small>2023-08-18 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+						 <strong>Notification About Auditurium Auditorium Hall</strong>
+						 <br/>
+						 <small>2023-06-05 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+
+						 <strong>Notification For Assesment of New Orders</strong>
+						 <br/>
+						 <small>2023-07-08 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+
+						 <strong>Notification About Univeristy Closing</strong>
+						 <br/>
+						 <small>2023-07-20 | Posted by the Administration</small>
+						 <br/>
+						 <br/>
+						</marquee>
+							
+					</div>
+					
+				</div>				
+			</div>
+
+
+<!-- The App Body ends here -->
+</div>
+
+
+		
+		
+
+		
+
+
+		<!--
+		<div class="clearfix"></div>
+		<br/><br/>
+
+
+		<div class="col-div-8">
+			<div class="box-8">
+			<div class="content-box">
+				<p>Maintainence history & Analytics Graph <span> View Details </span></p>
+				<br/>
+				<table>
+	  <tr>
+	    <th>Company</th>
+	    <th>Contact</th>
+	    <th>Country</th>
+	  </tr>
+	  <tr>
+	    <td>Alfreds Futterkiste</td>
+	    <td>Maria Anders</td>
+	    <td>Germany</td>
+	  </tr>
+	  <tr>
+	    <td>Centro comercial Moctezuma</td>
+	    <td>Francisco Chang</td>
+	    <td>Mexico</td>
+	  </tr>
+	  <tr>
+	    <td>Ernst Handel</td>
+	    <td>Roland Mendel</td>
+	    <td>Austria</td>
+	  </tr>
+	  <tr>
+	    <td>Island Trading</td>
+	    <td>Helen Bennett</td>
+	    <td>UK</td>
+	  </tr>
+	  
+	  
+	</table>
+			</div>
+		</div>
+		</div>
+
+
+
+
+		<div class="col-div-4">
+			<div class="box-4">
+			<div class="content-box">
+				<p>System Announcement <span> View old</span></p>
+
+
+				
+				<div class="circle-wrap">
+	    <div class="circle">
+	      <div class="mask full">
+	        <div class="fill"></div>
+	      </div>
+	      <div class="mask half">
+	        <div class="fill"></div>
+	      </div>
+	      <div class="inside-circle"> 70% </div>
+	    </div>
+	  </div>
+	-->
+
+
+		
+			
+		
+
+	
+
+
+				<div class="footer">
+							<div class="footer-text">
+									<a href="#"> <big>©</big> All Rights Reserved | Abdul Wali Khan University Mardan (Timergara Campus) | <span> developed by M.Sohail</span> </a>
+							</div>
+			
+							</div>
+							
+		
+
+
+
+
+
+							
+
+	
+
+   
+	
+
+<script type="text/javascript">
+
+	  $(".nav-push").click(function(){
+
+	    $("#mySidenav").css('width','70px');
+	    $("#main-head").css('margin-left','70px');
+	    $(".App-body").css('margin-left','70px');
+
+	    $(".footer").css('margin-left','70px');
+	    
+	   $(".logo").css('width','50px');
+	   $(".logo").css('height','30px');
+
+			$(".logo").css('margin-left','10px');
+
+			$(".Aname").css('margin-left','10px');
+
+	    $(".icon-a").css('visibility','hidden');
+	    $(".icons").css('visibility','visible');
+	 	
+
+	 	$(".nav-push").css('display','none');
+	    $(".nav2-push").css('display','block');
+
+	   	$(".Aname").css('display', 'block');
+	   	$(".Aname").css('visibility','hidden');
+
+
+	  });												
+
+	$(".nav2-push").click(function(){
+	    $("#mySidenav").css('width','250px');
+	    $("#main-head").css('margin-left','250px');
+	    $(".App-body").css('margin-left','250px');
+	    $(".logo").css('margin-left','70px');
+	    $(".footer").css('margin-left','250px');
+
+	    $(".Aname").css('visibility','visible');
+	    $(".logo").css('width',' 110px');
+	    $(".logo").css('height',' 90px');
+
+	     $(".icon-a").css('visibility','visible');
+	     $(".icons").css('visibility','visible');
+			
+	     $(".nav-push").css('display','block');
+	     $(".nav2-push").css('display','none');
+
+		$(".logo").css('visibility','visible');
+
+	    
+	 });
+
+	</script>
+
+
+
+
+</body>
+
+	
+
+
+
+
+
+</html>

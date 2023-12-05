@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Maintenance Requests</title>
+    <link rel="stylesheet" type="text/css" href="Administration-Dashboard-Css/Maintanence_Requests_Table.css">
+    <style>
+        /* Your CSS styles for table, buttons, and layout here */
+    </style>
+</head>
+<body>
+	<div class="Maint_Table">
+    <h1> <a href="file:///F:/Asset%20Maintainence%20System%20Awkum%20Tmg/Admininstration-Dashboard.html" > Admin Dashboard </a> - Maintenance Requests </h1>
+
+
+    
+    <!-- Table to display maintenance requests -->
+    <table>
+        <thead>
+            <tr>
+                <th>Request ID</th>
+                <th>User</th>
+                <th>Asset</th>
+                <th>Description</th>
+                <th>Urgency</th>
+                <th>Status</th>
+                <th>Assign</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row (you would dynamically populate rows from your database) -->
+            <tr>
+                <td>1</td>
+                <td>User A</td>
+                <td>Asset 1</td>
+                <td>Description of issue <img src="#"> </td>
+                <td>High</td>
+                <td>Open</td>
+                <td>
+                    <button onclick="assignRequest(1)">Assign</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+
+    <!-- JavaScript function to handle request assignment -->
+    <script>
+        function assignRequest(requestID) {
+            // Implement the logic to assign the request to a staff member here
+            // You would typically send an AJAX request to the server to update the assignment in the database
+        }
+    </script>
+</body>
+</html>
+

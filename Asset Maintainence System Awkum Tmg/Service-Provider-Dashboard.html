@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<title>Service Provider | Dashbaord</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="Service-Provider-Dashboard-files/Service-Provider-Dashboard-css/Service-Provider-Dashboard-css.css" type="text/css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+	
+			
+		<script src="https://kit.fontawesome.com/796a434402.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
+
+
+<style type="text/css">
+	::-webkit-scrollbar {
+    width:5px;
+
+
+::-webkit-scrollbar-track 
+    -webkit-box-shadow:inset -5px -5px 6px darkgreen; 
+
+
+::-webkit-scrollbar-thumb 
+    border-radius:5px;
+    -webkit-box-shadow: inset -5px -5px 6px darkgreen; 
+    height: 5px;
+    color: green;
+
+
+::-webkit-scrollbar-thumb:hover 
+    -webkit-box-shadow: inset -5px -5px 6px green; 
+}
+
+
+
+ /* Style for the table container */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        /* Style for table header row */
+        table th {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        /* Style for table data rows */
+        table td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* Alternate row background color for better readability */
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Adjust styles as needed to match your design preferences */
+
+        /* Style for buttons */
+        .action-buttons button {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .action-buttons button:last-child {
+            margin-right: 0;
+        }
+
+        .action-buttons button:hover {
+            background-color: #1e7e34;
+        }
+
+	</style>
+
+</head>
+
+
+
+
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+
+			<div class="akmtxt-head">
+
+				<a href="#" class="Aname">AWKUM-TMG </a>
+			</div>
+<div class="scroll">
+			
+			<img src="Service-Provider-Dashboard-files/images/unilogo.png" class="logo" alt="awkum-tmg logo">
+
+		
+
+
+	  <a href="#" class="icon-a" style="	 background: dimgray;	 border-radius: 5px; "	><i class="fa fa-tachometer icons"></i>-Dashboard</a>
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-briefcase icons"></i>&nbsp;Work Orders </a>
+	  <a href="#"class="icon-a"><i class="fa fa-credit-card-alt icons"></i>&nbsp;Billing and Payments</a> 
+
+	  
+
+	  
+
+	  
+
+	  <!-- <a href="#"	class="icon-a" target="popup"  onclick="window.open('', 'popup', 'width=600, height=700, scrollbars=no,resizable=no'); return false";>
+
+	  <i class="fa fa-wrench icons"></i>&nbsp;Edit Settings </a>
+	   -->
+	  	
+	  	<a href="#">
+  			<button onclick="togglePopup()">Edit Setting </button>
+		</a>
+
+	 
+	  	
+	  </div>
+
+
+
+	  <a href="#"class="icon-a"><i class="fa fa-sign-out icons"></i>&nbsp;Logout </a>
+
+
+	  
+	  <br/>
+	  <hr style="color: dimgray; border: .1px solid dimgray; margin-top: 240px;" >
+
+	  <p style="text-align: center; color: dimgray; font-size: 13px;"> Version 0.1  <br/><br/>  developed by M.Sohail </p>
+
+	  <br/>
+	
+</div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+
+	<div id="main-head">
+
+			
+
+			<span  class="nav-push">☰</span>
+			<span  class="nav2-push">☰</span>
+			<h1> University Assets Maintainence System  </h1>
+				
+	
+			<div class="profile">
+				 	  
+			<p> Vendor &nbsp;  <span> Logged in as Vendor </span></p>
+			</div>
+
+	</div>
+	
+			<div class="clearfix"></div>
+		
+
+
+	<div class="App-body">
+
+		<h2> Dashboard </h2>
+
+
+
+		 <div class="popup" id="popup-1">
+	  	<div class="overlay"></div>
+	  	 <div class="content">
+
+	  	 	<div class="close-btn" onclick="togglePopup()">&times;</div>
+
+	  	 		<div class="container-pop">
+        <h2>Password Change</h2>
+        <form id="passwordChangeForm">
+            <div class="form-group">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" name="currentPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            </div>
+            <button type="submit">Change Password</button>
+        </form>
+        <p id="message"></p>
+
+    </div>
+    
+	  	 	</div>
+	  	 </div>
+
+		<!--
+		<div style="background-image:url('images/awkumbaner.jpg' ); background-size: 100% 100%; background-repeat: no-repeat;  "  class="profile-box" style img src="images/Prback.png" class="proback" >
+		-->
+			
+			<div class="viewP-box" style="background-image: url('Service-Provider-Dashboard-files/images/awkumbaner.png'); background-size: 100% 100%; background-repeat: no-repeat;" >
+			<h3> Good Morning <br/> Service Provider (',')
+			<br/> Abdul Wali khan University Mardan (Timergara Campus) </h3>
+			<div class="viewbtn">
+				<a href="#" > <button class="btn-view2"> View Profile </button></a>
+				</div>
+			</div>
+			
+
+
+		
+		<div class="prnt-col-div-4">
+
+
+				<div class="child-col-div-4"  >
+				<div class="box-1" >
+
+					<i class="fa fa-wrench icons"></i>
+					<p>37 <br/> <a href="#">Panding Work Orders</a></p> 
+				</div>
+			</div>
+		
+
+
+				<div class="child-col-div-4"  >
+				<div class="box-2" >
+
+					<i class="fa fa-check-circle icons"></i>
+					<p>37 <br/> <a href="#">Completed Work Orders</a></p> 
+				</div>
+			</div>
+		</div>
+
+
+
+		<div class="clearfix"></div>
+				
+
+
+
+		<h1>Billing and Payment Information</h1>
+    
+    <!-- Table to display billing and payment information -->
+    <table>
+        <thead>
+            <tr>
+                <th>Invoice ID</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+        <tbody>
+            <!-- Example row with billing and payment data -->
+            <tr>
+                <td>INV-001</td>
+                <td>$500.00</td>
+                <td>2023-09-01</td>
+                <td>Paid</td>
+                <td class="action-buttons">
+                    <button onclick="viewInvoice('INV-001')">View</button>
+                    <button onclick="downloadInvoice('INV-001')">Download</button>
+                </td>
+            </tr>
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!-- <div class="prnt-col-div-5">
+				<div class="child-col-div-5">
+					<div class="box-div-5">
+						<table>	
+							<thead> Billing and Payment Methods Information Table</thead>
+							
+							<tr>
+								<td>Payment id</td>
+								<td>Invoice Number id</td>
+								<td>Maintenance Event Id</td>
+								<td>Service Provider Id</td>
+								<td>Payment Date</td>
+								<td>Payment Mehtod (EasyPaisa | Bank)</td>
+								<td>Payment Status</td>
+								<td>Payment Confirmaiton Date</td>
+								<td>Payment Reference number id</td>
+								<td>Invoice Details</td>
+								<td>Recipient Details (service provider)</td>
+								<td>Payment Notfication</td>
+								<td>Payment Approvel</td>
+							</tr>
+
+
+						</table> -->
+						
+					</div>
+				</div>
+			</div>
+		
+
+
+
+		
+			
+
+
+<!-- The App Body ends here -->
+</div>
+
+
+		
+		
+
+		
+
+<div class="clearfix"></div>
+		
+
+		
+			
+			
+
+	
+
+
+				<div class="footer">
+							<div class="footer-text">
+									<a href="#"> <big>©</big> All Rights Reserved | Abdul Wali Khan University Mardan (Timergara Campus) | <span> developed by M.Sohail</span> </a>
+							</div>
+			
+							</div>
+							
+		
+
+
+
+
+
+							
+
+	
+<div class="clearfix"></div>
+   
+	
+
+<script type="text/javascript">
+
+	  $(".nav-push").click(function(){
+
+	    $("#mySidenav").css('width','70px');
+	    $("#main-head").css('margin-left','70px');
+	    $(".App-body").css('margin-left','70px');
+
+	    $(".footer").css('margin-left','70px');
+	    
+	   $(".logo").css('width','50px');
+	   $(".logo").css('height','30px');
+
+			$(".logo").css('margin-left','10px');
+
+			$(".Aname").css('margin-left','10px');
+
+	    $(".icon-a").css('visibility','hidden');
+	    $(".icons").css('visibility','visible');
+	 	
+
+	 	$(".nav-push").css('display','none');
+	    $(".nav2-push").css('display','block');
+
+	   	$(".Aname").css('display', 'block');
+	   	$(".Aname").css('visibility','hidden');
+
+
+	  });												
+
+	$(".nav2-push").click(function(){
+	    $("#mySidenav").css('width','250px');
+	    $("#main-head").css('margin-left','250px');
+	    $(".App-body").css('margin-left','250px');
+	    $(".logo").css('margin-left','70px');
+	    $(".footer").css('margin-left','250px');
+
+	    $(".Aname").css('visibility','visible');
+	    $(".logo").css('width',' 110px');
+	    $(".logo").css('height',' 90px');
+
+	     $(".icon-a").css('visibility','visible');
+	     $(".icons").css('visibility','visible');
+			
+	     $(".nav-push").css('display','block');
+	     $(".nav2-push").css('display','none');
+
+		$(".logo").css('visibility','visible');
+
+	    
+	 });
+
+	</script>
+
+
+	 <script>
+        function viewInvoice(invoiceID) {
+            // Implement logic to view invoice details here
+        }
+
+        function downloadInvoice(invoiceID) {
+            // Implement logic to download invoice here
+        }
+    </script>
+
+
+<script>
+
+	document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("passwordChangeForm");
+    const message = document.getElementById("message");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const currentPassword = document.getElementById("currentPassword").value;
+        const newPassword = document.getElementById("newPassword").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+
+        // You can add your password change logic here.
+        // For this example, we'll simply check if the new password matches the confirmation.
+        if (newPassword === confirmPassword) {
+            message.textContent = "Password changed successfully!";
+            message.style.color = "green";
+        } else {
+            message.textContent = "New password and confirmation do not match.";
+            message.style.color = "red";
+        }
+    });
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+	
+	function togglePopup(argument) {
+		document.getElementById("popup-1") .classList.toggle("active");
+	}
+</script>
+
+
+
+</body>
+
+	
+
+
+
+
+
+</html>

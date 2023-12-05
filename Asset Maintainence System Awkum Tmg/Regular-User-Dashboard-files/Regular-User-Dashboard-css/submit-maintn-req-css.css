@@ -1,0 +1,42 @@
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 80% ;
+
+        background: url(background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-top: 10px;
+
+
+}
+
+.form-for-complaint{
+
+        background: transparent;
+
+
+        width: 35%;
+        text-align: left;
+        border: .1px solid white;
+        border-radius: 20px;
+        box-shadow: 10px 10px 15px snow;
+        padding: 20px;
+
+}
+
+.label-for-complaint{
+        color: white;
+
+
+}
+
+.input-box-for-complaint{
+        
+        width: 98%;
+        min-height: 30px;
+        border: none;
+        border-radius: 5px;
+}

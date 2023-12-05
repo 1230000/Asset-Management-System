@@ -1,0 +1,1063 @@
+@import url(https://fonts.googleapis.com/css2);
+
+
+
+
+   
+
+body{
+
+
+     min-height: 150vh;
+    
+    background-color: ghostwhite;
+    font-family: system-ui;
+    margin: 0;
+
+}
+
+
+.clearfix{
+  clear: both;
+}
+
+
+.akmtxt-head {
+  width: 251px;
+  height: 57px;
+  background-color:#2E9C4C ;
+  
+
+}
+
+.akmtxt-head .Aname{
+  float: left;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif; 
+  color: gainsboro;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+
+.akmtxt-head .Aname:hover{
+
+  margin-left: 10px;
+
+  color: gainsboro;
+  background-color:#2E9C4C;
+}
+
+
+
+
+.logo{
+
+  width: 100px;
+  height: 75px;
+  margin-left: 70px;
+
+
+  margin-top: 15px;
+  margin-bottom: 30px;
+  cursor: pointer;
+
+
+}
+
+
+/*#2E9C4C*/
+
+
+.scroll {
+    overflow-y: scroll;
+    height:  600px  ;
+    width: 250px;
+    background-color: #282C35;
+
+}
+.scroll::-webkit-scrollbar {
+    width:5px;
+
+}
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.6); 
+    border-radius:5px;
+    
+}
+.scroll::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px red; 
+    height: 5px;
+}
+.scroll::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 6px green; 
+}
+
+
+.sidenav {
+  float: left;
+  min-height: 100vh;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+
+  overflow: hidden;
+  transition: .5s ;
+  margin:0;
+  background-color: #282C35;
+
+    overflow: hidden;
+  box-shadow:  1px -5px 15px #212B36;
+
+ 
+}
+
+.sidenav a {
+  margin-top: 5;
+  margin-left: 15px;
+  margin-right: 10px ;
+  margin-bottom: 8px;
+
+
+
+  text-decoration: none;
+  font-size: 13px;
+  color: white;
+  display: block;
+
+  transition: .5s ;
+}
+
+
+.sidenav a:hover {
+
+  border-radius: 5px;
+  background-color: dimgray;
+
+}
+
+
+.icon-a .icons{
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 2px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: ghostwhite;
+}
+.icon-a .icons:hover{
+  margin-top: 5px;
+  margin-left: 7px;
+  margin-right: 2px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  color: greenyellow;
+}
+
+
+
+
+
+  
+
+
+
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+
+
+
+#main-head {
+  background-color: #2E9C4C;
+  transition: margin-left .5s ;
+  padding: 16px;
+  margin-left: 250px;
+  min-width: 400px;
+  height: 25px;
+  overflow: hidden;
+
+
+}
+
+h1{
+  float: left;
+  margin-top: 0;
+  margin-left:300px;
+  font-size: 20px;
+  font-family: Times-New-Romans;
+  color: white;
+}
+
+
+.App-body{
+  height: 100%;
+  transition: margin-left .5s;
+  padding: 16px;
+  margin-left: 250px;
+  overflow: hidden;
+  background-color: ghostwhite;
+  
+ 
+}
+
+.nav-push{
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-push:hover{
+  float: left;
+  margin-left: 0;
+  margin-top: 0px;
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav2-push {
+  float: left;
+
+  margin-left: 0;
+  margin-top: 0;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+.nav2-push{
+  display: none;
+}
+
+
+
+.profile{
+  float: right;
+  width: auto;
+  height: 27px;
+  margin-top: 0;
+  margin-right: ;
+
+  padding: 0;
+
+}
+.profile p {
+  float: right;
+  font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+} 
+.profile p span{
+  float: right;
+  font-size: 12px;
+    color: powderblue;
+
+    margin-top: 3px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    padding: 0;
+} 
+
+
+
+h2{
+
+  padding-left:8px;
+  margin-top: 0;
+  color: dark;
+  font-family: serif;
+  font-weight: bolder;
+  font-size: 25px;
+  width: 40px;
+  text-shadow: -5px -5px 10px black;
+}
+
+
+
+
+.viewP-box{
+  position: relative;
+  width: 100%;
+  height: 180px;
+  float: left;
+  margin: 0;
+  border-radius: 5px;
+  overflow: hidden;
+ 
+ box-shadow: -5px -5px 7px gray;
+
+}
+
+.viewP-box h3{
+    font-weight: 450;
+    color: white;
+    float: left;
+    margin-left: 40px;
+    line-height: 28px;
+}
+
+.viewbtn{
+  position: sticky;
+  float: left;
+  margin-left: 20px;
+  margin-right: 100%;
+
+
+}
+.btn-view2 {
+  position: sticky;
+  color: white;
+  font-size: 13px;
+  background-color:darkred;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  border:none;
+}
+.btn-view2:hover {
+  position: sticky;
+  color: white;
+  width: 100px;
+  height: 40px;
+  font-size: 13px ;
+  border-radius: 4px;
+  background-color:  #E51f00;
+
+
+}
+
+
+
+
+
+.prnt-col-div-4{
+  float: left;
+  min-width: 60%;
+  height: 200px;
+  margin-top:15px;
+  border-radius: 6px;
+  margin-bottom: 0;
+
+
+}
+.child-col-div-4{
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-left: 0;
+
+
+
+
+}
+
+.box-1{
+  
+  line-height: 70px;
+   
+  float: left;
+  margin-left: 0;
+  padding:0;
+  width: 98%;
+  height: 100%;
+/*  #C28135 box 2 color*/
+/*  background-color:saddlebrown;*/
+  background-color: #AE302E;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 7px gray;
+}
+
+.box-1 .icons{
+  float: right;
+  font-size: 50px;
+   margin: 40px 30px ;
+  color: black;
+  opacity: 30%;
+}
+
+
+.box-1 p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 100%;
+  margin-left: 10px;
+}
+.box-1 p a{
+
+  color: white;
+  font-size: 15px;
+  float:left;
+  margin-left: 0;
+  text-decoration: none;
+
+}
+
+
+
+.box-2{
+
+  line-height: 70px;
+   box-shadow: 5px 5px 7px gray;
+
+  float: right;
+  margin-left: 0;
+  padding:0;
+  width: 98%;
+  height: 100%;
+/*  #C28135 box 2 color*/
+/*  background-color:saddlebrown;*/
+  background-color: #C28135;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+}
+
+
+
+.box-2 .icons{
+  float: right;
+  margin: 40px 30px ;
+  font-size: 50px;
+  color: black;
+  opacity: 30%;
+}
+
+.box-2 p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+
+  margin-left: 10px;
+}
+.box-2 p a{
+
+  color: white;
+
+  font-size: 15px;
+  float:left;
+  margin-left: 0;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.prnt-col-div-6{
+  float: right;
+  width: 38%;
+  height: 500px;
+  margin-top: 15px;
+  border-radius: 5px;
+  
+}
+.child-col-div-6{
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+
+}
+.box-notify{
+  float: left;
+  width: 92%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+
+} 
+.box-notify p{
+  float: left;
+  margin-top: 0;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  text-shadow: 5px 5px 10px red;
+}
+.box-notify a{
+  float: right;
+  margin-left: 90px;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.box-notify strong{
+  color: blue;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+
+.prnt-col-div-6{
+  float: right;
+  width:100%;
+  height: 400px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  box-shadow: -5px -5px 7px gray;
+  overflow: hidden;
+   border-right: .1px solid silver;
+  border-bottom: .1px solid silver;
+  padding: 5px  ;
+}
+
+}
+.child-col-div-6{
+  float: right;
+  width: 100%;
+  height: 100%;
+
+
+
+
+
+}
+
+.head-6{
+  width: 100%;
+  height: 50px;
+  padding: 0;
+  margin-top: 0;
+  background-color: burlywood;
+  float: left;
+  overflow: hidden;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.head-6 a {
+  position: sticky;
+  float: left;
+  margin-top: 15px;
+  margin-left: 10px;
+  color: darkred;
+  font-size: 15px;
+  font-weight: 400;
+  text-shadow: 5px 5px 10px white;
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.head-6 a span{
+  position: sticky;
+  float: right;
+  margin-top: 0;
+  margin-left: 35px;
+  margin-right: 0;
+  color: darkred;
+  font-size: 14px;
+  font-weight: 400;
+  text-shadow: 5px 5px 10px white;
+  cursor: pointer;]
+  text-decoration: none;
+}
+.head-6 a span:hover{
+  position: sticky;
+ float: right;
+  margin-top: 0;
+  margin-left: 35px;
+  margin-right: 0;
+  color: darkred;
+  font-size: 15px;
+  font-weight: 450;
+  text-shadow: 5px 5px 10px white;
+  cursor: pointer;
+}
+
+
+.box-6-1{
+  float: right;
+  width: 100%;
+  height: 100%;
+  background-color: ghostwhite;
+  
+}
+.box-6-1 a{
+  float: left;
+  color: blue;
+  font-size: 15px;
+
+  
+}
+.box-6-1 Date{
+
+  color: red;
+  font-size: 15px;
+   
+  
+}
+marquee{
+  margin-left: 10px;
+  margin-right: 15px;
+
+
+}
+
+*/
+
+
+.footer{
+  position: relative;
+   background-color: ghostwhite;
+
+  transition: margin-left .5s;
+
+  margin-top: 220px;
+  margin-left: 250px;
+  min-width : 400px;
+  height: 45px;
+  overflow: hidden;
+  box-shadow: -1px -1px 10px black;
+}
+
+.footer-text {
+  padding: 10px;
+
+
+}
+.footer-text a{
+
+  padding-left: 20px;
+  
+  color: darkslategrey;
+  text-decoration: none;
+  font-size: 14px;
+
+
+}
+
+
+.footer-text a span{
+  color: darkred;
+  text-decoration: none;
+  font-size: 12px;
+
+  cursor: pointer;
+}
+
+
+            
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.box-1 .box-icons {
+  position: sticky;
+  font-size:35px;
+  color: dimgrey;
+  float: right;
+  padding-right: 15px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.box-1 .box-icons:hover {
+  position: sticky;
+  font-size:35px;
+  color: silver;
+  float: right;
+  padding-right: 15px;
+  margin-top: 55px;
+}
+
+
+.box-2 .box-icons {
+  position: sticky;
+  font-size:30px;
+  color: dimgrey;
+  float: right;
+  padding-right: 15px;
+  margin-top: 55px;
+  cursor: pointer;
+}
+.box-2 .box-icons:hover {
+  position: sticky;
+  font-size:35px;
+  color: silver;
+  float: right;
+  padding-right: 16px;
+  margin-top: 55px;
+}
+
+.box-3 .box-icons {
+  position: sticky;
+  font-size:30px;
+  color: dimgrey;
+  float: right;
+  padding-right: 15px;
+  margin-top: 55px;
+  cursor: pointer;
+}
+.box-3 .box-icons:hover {
+  position: sticky;
+  font-size:35px;
+  color: silver;
+  float: right;
+  padding-right: 16px;
+  margin-top: 55px;
+}
+
+
+.box-4 .box-icons {
+  position: sticky;
+  font-size:33px;
+  color: dimgrey;
+  float: right;
+  padding-right: 16px;
+  margin-top: 50px;
+  cursor: pointer;  
+}
+.box-4 .box-icons:hover {
+  position: sticky;
+  font-size:35px;
+  color: silver;
+  float: right;
+  padding-right: 16px;
+  margin-top: 50px;
+}
+*/
+
+
+
+
+
+
+/*  
+.col-div-6{
+  margin-top: 20px;
+  margin-left:0px;
+  float: left;
+  width: 100%;
+  padding-left: 0;
+
+
+
+}
+
+.col-div-3{
+  width: 25%;
+  height: 100%;
+  float: left;
+
+}
+.box-1-6{
+ 
+  width: 85%;
+  height: 130px;
+  margin-left: 10px;
+  padding:10px;
+  border-radius: 5px ;
+  background-color: #2E9C4C;
+
+
+}
+.box-1-6 p{
+
+    float: left;
+   font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+   
+}
+.box-1-6 p a{
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+
+.box-2-6{
+ 
+  width: 85%;
+  height: 130px;
+  margin-left: 10px;
+  padding:10px;
+  border-radius: 5px ;
+  background-color: darkred;
+
+
+}
+.box-2-6 p{
+
+    float: left;
+   font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+   
+}
+.box-2-6 p a{
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.box-3-6{
+ 
+  width: 85%;
+  height: 130px;
+  margin-left: 10px;
+  padding:10px;
+  border-radius: 5px ;
+  background-color: purple;
+
+
+}
+.box-3-6 p{
+
+    float: left;
+   font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+   
+}
+.box-3-6 p a{
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+
+
+
+.box-4-6{
+ 
+  width: 85%;
+  height: 130px;
+  margin-left: 10px;
+  padding:10px;
+  border-radius: 5px ;
+  background-color: brown;
+
+
+}
+.box-4-6 p{
+
+    float: left;
+   font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-top: 5px;
+    display: inline-block;
+   
+}
+.box-4-6 p a{
+
+  float: left;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+
+}
+
+.box-icon{
+
+    font-size: 25px!important;
+    float: right;
+    margin-top: 25px!important;
+
+    color: darkgray;
+    padding: 0;
+
+}
+.col-div-8{
+   width: 96%;
+  height: 100%;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding:10px;
+  border-radius: 5px;
+
+
+  background-color: #606465;
+;
+
+}
+.col-div-4{
+   width: 96%;
+  height: 150px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding:10px;
+  border-radius: 5px;
+  background-color: #606465;
+
+}
+.content-box{
+  padding: 20px;
+}
+.content-box p{
+  margin: 0px;
+    font-size: 20px;
+    color: #f7403b;
+}
+.content-box p span{
+  float: right;
+    
+    padding: 3px 10px;
+    font-size: 15px;
+}
+.box-8, .box-4{
+  width: 95%;
+  height: 330px;
+  
+}
+
+
+.box-8{
+  margin-left: 10px;
+}
+table {
+  font-family:  sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+td, th {
+  text-align: left;
+  padding:15px;
+  color: #ddd;
+  border-bottom: 1px solid #81818140;
+}
+
+/*
+.circle-wrap {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle-wrap .circle .mask {
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.circle-wrap .circle .mask .fill {
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: transparent;
+}
+.circle-wrap .circle .mask.full,
+.circle-wrap .circle .fill {
+  animation: fill ease-in-out 3s;
+  transform: rotate(126deg);
+}
+
+@keyframes fill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(126deg);
+  }
+}
+.circle-wrap .inside-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #fff;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 100;
+  font-weight: 700;
+  font-size: 2em;
+}
+ 
+ */
